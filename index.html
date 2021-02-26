@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/782dfba520.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/indexxstyle.css" type="text/css" />
+
+    <title>Korona Bilgilendirme</title>
+  </head>
+
+  <body>
+    <div id="hero">
+      <video autoplay loop muted>
+        <source src="img/dezenfektan.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="endısdiv">
+      <div id="test" class="dısdiv" onclick="run(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <div class="menü" id="menüac">
+        <a class="enüstbar"" href=" #"></a>
+        <a style="font-size: 25px" href="kayit.php" target="_blank"
+          ><i class="fas fa-user-plus">Kayıt Ol</i></a
+        >
+        <a style="font-size: 25px" href=" giris.php" target="_blank"
+          ><i class="fas fa-sign-in-alt">Giriş Yap</i></a
+        >
+      </div>
+    </div>
+    <script>
+      function run(x) {
+        x.classList.toggle("change");
+
+        document.getElementById("menüac").classList.toggle("open");
+
+        document.getElementById("test").classList.toggle("move");
+      }
+    </script>
+  </body>
+</html>

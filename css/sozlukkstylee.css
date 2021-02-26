@@ -1,0 +1,63 @@
+body {
+  background-color: #ecf0f1;
+}
+.baslik {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+h2 {
+  color: #34495e;
+  font-size: 20px;
+  text-align: center;
+}
+.dısdiv {
+  width: 1000px;
+  height: 300px;
+  background-color: white;
+  margin: 0 auto;
+  opacity: 0.7;
+}
+.div {
+  float: left;
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  margin: 1px;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 3px 1px grey;
+  -moz-box-shadow: 0 0 3px 1px grey;
+  box-shadow: 0 0 3px 1px grey;
+  border-radius: 5px;
+  margin-top: 5%;
+  padding: 10px;
+  position: relative;
+  left: 19%;
+}
+li {
+  list-style-type: none;
+  text-align: center;
+}
+a {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  color: #95a5a6;
+  font-weight: 1000;
+  font-size: 18px;
+}
+.div:hover {
+  background-color: #34495e;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .dısdiv {
+    width: 300px;
+    height: 300px;
+  }
+  .div {
+    left: 0;
+  }
+}

@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#hero video {
+  height: 100vh;
+  width: 100%;
+  background-position: absolute;
+  z-index: 10;
+  object-fit: cover;
+}
+#hero {
+  position: relative;
+}
+.menü {
+  display: inline-block;
+  background-color: #b2bec3;
+  position: absolute;
+  top: 0;
+  left: -300px;
+  transition: all 0.8s ease;
+  background-color: hsla(0, 23%, 95%, 0);
+}
+.menü a {
+  display: block;
+  text-align: left;
+  padding: 18px;
+  color: #dcdde1;
+  transition: all ease 0.8s;
+}
+.menü a:hover {
+  background-color: #bdc3c7;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 32px;
+  height: 4px;
+  background-color: #d1ccc0;
+  margin: 5px;
+  transition: 0.5s;
+}
+.dısdiv {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.change .bar1 {
+  transform: rotate(-45deg) translate(-7px, 5px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  transform: rotate(45deg) translate(-7px, -7px);
+}
+.open {
+  left: 0;
+  transition: all 0.5s ease;
+}
+.move {
+  left: 0px;
+  transition: all 0.5s ease;
+}
+.enüstbar {
+  background: grey;
+  opacity: 0;
+}

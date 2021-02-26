@@ -1,0 +1,27 @@
+body {
+  background-color: #d1d8e0;
+}
+h2 {
+  padding: 1%;
+  font-size: 33px;
+  color: #636e72;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+.baslik {
+  text-align: center;
+}
+
+img {
+  width: 330px;
+  height: 330px;
+  margin: 70px;
+}
+.fotolar {
+  float: left;
+}
+@media only screen and (max-width: 768px) {
+  .baslik {
+    width: 400px;
+  }
+}

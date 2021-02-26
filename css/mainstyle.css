@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+  height: 100vh;
+}
+
+.menu {
+  width: 100%;
+  background-color: hsla(0, 23%, 95%, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+ul li {
+  display: inline-block;
+  width: 225px;
+  margin: 0px;
+  line-height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+ul li a {
+  text-decoration: none;
+  color: #bdc3c7;
+  font-family: sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  display: inline-block;
+  font-size: 19px;
+  text-align: center;
+  margin: 7px;
+}
+ul li a:hover {
+  color: #485460;
+}
+.mobil {
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  color: white;
+  background-color: #535c68;
+  opacity: 0.5;
+  padding: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+ul li a::after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #485460;
+  transition: all 0.9s;
+  margin-top: 9px;
+  border-bottom: 1px solid#485460;
+}
+ul li a:focus::after {
+  width: 100%;
+}
+ul li a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .mobil {
+    display: block;
+  }
+  .menu ul {
+    width: 100%;
+    padding: 0;
+  }
+  .menu ul li {
+    text-align: center;
+    display: block;
+    position: relative;
+    left: 23%;
+  }
+
+  .linkler {
+    width: 100%;
+    display: none;
+  }
+  .aktif {
+    display: block;
+  }
+  .menu a {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  .menu {
+    opacity: 0.8;
+    background: #bdc3c7;
+  }
+  ul li a {
+    text-decoration: none;
+    color: #222f3e;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    opacity: 0.5;
+    display: inline-block;
+    line-height: 1;
+    font-size: 14px;
+    text-align: center;
+  }
+  ul li {
+    display: inline-block;
+    width: 225px;
+    margin: 0px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0px;
+  }
+}
